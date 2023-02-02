@@ -16,5 +16,5 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/{{ trv_friendly_name }}/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single

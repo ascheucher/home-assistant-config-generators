@@ -1,4 +1,4 @@
-- id: '1629347453244'
+- id: '8675595898642'
   alias: Update Danfoss Ally TRV on change for trv.gf_kitchen
   description: ''
   trigger:
@@ -16,9 +16,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_kitchen/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '7150469842156'
+- id: '7797130612005'
   alias: Update Danfoss Ally TRV on change for trv.uf_living-room_west
   description: ''
   trigger:
@@ -36,9 +36,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.uf_living-room_west/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '6329607277555'
+- id: '0160689663078'
   alias: Update Danfoss Ally TRV on change for trv.uf_living-room_north
   description: ''
   trigger:
@@ -56,9 +56,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.uf_living-room_north/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '6238252170818'
+- id: '7086098600118'
   alias: Update Danfoss Ally TRV on change for trv.gf_hw_west
   description: ''
   trigger:
@@ -76,9 +76,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_hw_west/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '6262728351743'
+- id: '2624334093968'
   alias: Update Danfoss Ally TRV on change for trv.uf_office
   description: ''
   trigger:
@@ -96,9 +96,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.uf_office/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '3002289395752'
+- id: '7718706237550'
   alias: Update Danfoss Ally TRV on change for trv.gf_bath
   description: ''
   trigger:
@@ -116,9 +116,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_bath/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '6643243091207'
+- id: '7995539510305'
   alias: Update Danfoss Ally TRV on change for trv.gf_hw_east
   description: ''
   trigger:
@@ -136,9 +136,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_hw_east/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '3264117191191'
+- id: '5940383840429'
   alias: Update Danfoss Ally TRV on change for trv.gf_guest-room
   description: ''
   trigger:
@@ -156,9 +156,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_guest-room/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '3420081630811'
+- id: '0255767772069'
   alias: Update Danfoss Ally TRV on change for trv.uf_bedroom
   description: ''
   trigger:
@@ -176,9 +176,9 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.uf_bedroom/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
-- id: '1725003403128'
+- id: '8399155979492'
   alias: Update Danfoss Ally TRV on change for trv.gf_toilet
   description: ''
   trigger:
@@ -196,5 +196,5 @@
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_toilet/get
-      payload: '{"occupied_heating_setpoint":""}'
+      payload: '{"occupied_heating_setpoint":"", "local_temperature":""}'
   mode: single
