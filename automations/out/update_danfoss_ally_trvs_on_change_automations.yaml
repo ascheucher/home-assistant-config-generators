@@ -1,11 +1,11 @@
-- id: '9422842052891'
+- id: '1629347453244'
   alias: Update Danfoss Ally TRV on change for trv.gf_kitchen
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_kitchen/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -17,19 +17,15 @@
     data:
       topic: zigbee2mqtt/trv.gf_kitchen/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_kitchen/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '8943084013873'
+- id: '7150469842156'
   alias: Update Danfoss Ally TRV on change for trv.uf_living-room_west
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.uf_living-room_west/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -41,19 +37,15 @@
     data:
       topic: zigbee2mqtt/trv.uf_living-room_west/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.uf_living-room_west/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '7389831631372'
+- id: '6329607277555'
   alias: Update Danfoss Ally TRV on change for trv.uf_living-room_north
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.uf_living-room_north/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -65,19 +57,15 @@
     data:
       topic: zigbee2mqtt/trv.uf_living-room_north/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.uf_living-room_north/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '2520211665129'
+- id: '6238252170818'
   alias: Update Danfoss Ally TRV on change for trv.gf_hw_west
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_hw_west/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -89,19 +77,15 @@
     data:
       topic: zigbee2mqtt/trv.gf_hw_west/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_hw_west/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '4445190419281'
+- id: '6262728351743'
   alias: Update Danfoss Ally TRV on change for trv.uf_office
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.uf_office/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -113,19 +97,15 @@
     data:
       topic: zigbee2mqtt/trv.uf_office/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.uf_office/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '8093688940434'
+- id: '3002289395752'
   alias: Update Danfoss Ally TRV on change for trv.gf_bath
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_bath/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -137,19 +117,15 @@
     data:
       topic: zigbee2mqtt/trv.gf_bath/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_bath/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '5086966581081'
+- id: '6643243091207'
   alias: Update Danfoss Ally TRV on change for trv.gf_hw_east
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_hw_east/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -161,19 +137,15 @@
     data:
       topic: zigbee2mqtt/trv.gf_hw_east/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_hw_east/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '2055359969470'
+- id: '3264117191191'
   alias: Update Danfoss Ally TRV on change for trv.gf_guest-room
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_guest-room/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -185,19 +157,15 @@
     data:
       topic: zigbee2mqtt/trv.gf_guest-room/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_guest-room/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '4774849798483'
+- id: '3420081630811'
   alias: Update Danfoss Ally TRV on change for trv.uf_bedroom
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.uf_bedroom/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -209,19 +177,15 @@
     data:
       topic: zigbee2mqtt/trv.uf_bedroom/get
       payload: '{"occupied_heating_setpoint":""}'
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.uf_bedroom/get
-      payload: '{"occupied_heating_setpoint":""}'
   mode: single
-- id: '1040536250765'
+- id: '1725003403128'
   alias: Update Danfoss Ally TRV on change for trv.gf_toilet
   description: ''
   trigger:
   - platform: mqtt
     topic: zigbee2mqtt/trv.gf_toilet/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -229,10 +193,6 @@
       minutes: 0
       seconds: 15
       milliseconds: 0
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/trv.gf_toilet/get
-      payload: '{"occupied_heating_setpoint":""}'
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/trv.gf_toilet/get

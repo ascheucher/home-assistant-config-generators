@@ -5,7 +5,7 @@
   - platform: mqtt
     topic: zigbee2mqtt/{{ trv_friendly_name }}/set/occupied_heating_setpoint
   - platform: time_pattern
-    minutes: '1'
+    minutes: '*'
   condition: []
   action:
   - delay:
@@ -13,10 +13,6 @@
       minutes: 0
       seconds: 15
       milliseconds: 0
-  - service: mqtt.publish
-    data:
-      topic: zigbee2mqtt/{{ trv_friendly_name }}/get
-      payload: '{"occupied_heating_setpoint":""}'
   - service: mqtt.publish
     data:
       topic: zigbee2mqtt/{{ trv_friendly_name }}/get
